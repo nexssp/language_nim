@@ -10,7 +10,7 @@ languageConfig.checkSyntax = "";
 languageConfig.interactiveShell = "nim";
 languageConfig.builders = {};
 languageConfig.compilers = {
-  node: {
+  nim: {
     install: "scoop install nim",
     command: "nim",
     args: "compile --verbosity:0 --showAllMismatches:on --run <file>", //&& del <fileNoExt>.exe
@@ -19,7 +19,7 @@ languageConfig.compilers = {
 };
 languageConfig.errors = require("./nexss.nim.errors");
 languageConfig.languagePackageManagers = {
-  npm: {
+  nimble: {
     installation: "installed.",
     messageAfterInstallation: null, // sometimes there is need of add something to the files can be add here eg php for composer.
     installed: "nimble list",
