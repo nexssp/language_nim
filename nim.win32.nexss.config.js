@@ -3,6 +3,9 @@ languageConfig.title = "Nim";
 languageConfig.description =
   "Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula.";
 languageConfig.url = "https://nim-lang.org";
+languageConfig.founders = ["Andreas Rumpf"];
+languageConfig.developers = [""];
+languageConfig.years = ["2008"];
 languageConfig.extensions = [".nim"];
 languageConfig.executeCommandLine = "nim";
 languageConfig.printCommandLine = ""; //no console.log() needed to display result eg node -p "4+6"
