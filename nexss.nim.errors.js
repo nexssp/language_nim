@@ -1,3 +1,4 @@
 module.exports = {
-  "Cannot find module '(.*?)'": "nexss js install <package>"
+  Processing:
+    "Nim with the very first start showing some data on error fd. Run again and problem should dissappear.",
 };

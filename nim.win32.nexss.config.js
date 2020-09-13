@@ -1,4 +1,7 @@
-let languageConfig = Object.assign({}, require("../config.win32"));
+let languageConfig = Object.assign(
+  {},
+  require(`../config.${process.platform}`)
+);
 languageConfig.title = "Nim";
 languageConfig.description =
   "Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula.";
@@ -17,8 +20,8 @@ languageConfig.compilers = {
     install: "scoop install nim",
     command: "nim",
     args: "compile --verbosity:0 --showAllMismatches:on --run <file>", //&& del <fileNoExt>.exe
-    help: ``
-  }
+    help: ``,
+  },
 };
 languageConfig.errors = require("./nexss.nim.errors");
 languageConfig.languagePackageManagers = {
@@ -45,8 +48,8 @@ languageConfig.languagePackageManagers = {
     },
     // if command not found in specification
     // run directly on package manager
-    else: "nimble"
-  }
+    else: "nimble",
+  },
 };
 
 module.exports = languageConfig;
