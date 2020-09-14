@@ -9,7 +9,8 @@ languageConfig.compilers = {
   nim: {
     install: `${sudo} apt-get install nim`,
     command: "nim",
-    args: "compile --verbosity:0 --showAllMismatches:on --run <file>", //&& del <fileNoExt>.exe
+    args:
+      "compile --verbosity:0 --showAllMismatches:on --hints:off --run <file>", //&& del <fileNoExt>.exe
     help: ``,
   },
 };
