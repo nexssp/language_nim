@@ -16,6 +16,7 @@ languageConfig.dist = distName;
 
 // TODO: Later to cleanup this config file !!
 switch (distName) {
+  case os.distros.DEBIAN:
   case os.distros.UBUNTU:
     languageConfig.compilers.nim.install = os.replacePMByDistro(
       languageConfig.compilers.nim.install
