@@ -1,10 +1,10 @@
 let languageConfig = Object.assign({}, require(`./nim.win32.nexss.config`));
-const os = require("@nexssp/os");
+const os = require(`${process.env.NEXSS_SRC_PATH}/node_modules/@nexssp/os/`);
 let sudo = os.sudo();
 
 languageConfig.compilers = {
   nim: {
-    install: `${sudo}apt-get install nim`,
+    install: `${sudo}apt-get install -y nim`,
     command: "nim",
     args: "compile --verbosity:0 --hints:off --run <file>", //&& del <fileNoExt>.exe
     help: ``,
