@@ -1,5 +1,6 @@
-# Nexss PROGRAMMER 2.0.0 - Nim
+# Nexss PROGRAMMER 2.x - Nim
 # Default template for JSON Data
+
 import json
 
 var f : File;

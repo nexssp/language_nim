@@ -33,8 +33,8 @@ languageConfig.languagePackageManagers = {
     search: "nimble search",
     install: "nimble install",
     uninstall: "nimble uninstall",
-    help: "npm help",
-    version: "npm --version",
+    help: "nimble help",
+    version: "nimble --version",
     init: () => {
       // if (
       //   !require("fs").existsSync(
